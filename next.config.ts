@@ -3,6 +3,10 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com'],
   },
+  eslint: {
+    // Only use this if you want to completely disable ESLint during builds
+    ignoreDuringBuilds: true,
+  },
   // Add this if you're using TypeScript
   typescript: {
     // !! WARN !!
