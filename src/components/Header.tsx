@@ -1,31 +1,78 @@
 import Link from 'next/link'
-import { Search, ShoppingCart, User } from 'lucide-react'
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button"
+import { Menu, Search, ShoppingCart, User } from "lucide-react"
+
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Collection', href: '/collection' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
+]
 
 export function Header() {
   return (
     <header className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-serif font-bold text-gray-800">
-          VinWatch
-        </Link>
-        <nav className="hidden md:flex space-x-8">
-          <Link href="/" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">Home</Link>
-          <Link href="/collection" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">Collection</Link>
-          <Link href="/about" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">About</Link>
-          <Link href="/contact" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">Contact</Link>
-        </nav>
-        <div className="flex items-center space-x-4">
-          <button aria-label="Search" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
-            <Search size={20} />
-          </button>
-          <button aria-label="Cart" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
-            <ShoppingCart size={20} />
-          </button>
-          <button aria-label="Account" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
-            <User size={20} />
-          </button>
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center">
+            <Link href="/" className="text-2xl font-serif">
+              VinWatch
+            </Link>
+          </div>
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-gray-700 hover:text-gray-900 transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Utility Icons */}
+          <div className="flex items-center space-x-4">
+            <button aria-label="Search" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <Search size={20} />
+            </button>
+            <button aria-label="Cart" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <ShoppingCart size={20} />
+            </button>
+            <button aria-label="Account" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <User size={20} />
+            </button>
+
+            {/* Mobile Menu Button - Only visible on mobile */}
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Open menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[200px] sm:w-[300px]">
+                  <nav className="flex flex-col space-y-4 mt-8">
+                    {navigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="text-lg font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }

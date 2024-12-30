@@ -5,21 +5,21 @@ import { Button } from '@/components/ui/button'
 const products = [
   {
     id: 1,
-    name: 'Classic Chronograph',
-    price: '$1,299',
-    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+    name: 'Patek Philippe Nautilus',
+    price: '$123,800',
+    image: 'https://images.unsplash.com/photo-1626624386327-5204714bae9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 2,
-    name: 'Elegant Dress Watch',
-    price: '$899',
-    image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+    name: 'Omega Speedmaster Professional Moonwatch',
+    price: '$8000',
+    image: 'https://images.unsplash.com/photo-1696321408191-62d7363743b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 3,
-    name: 'Vintage Diver',
+    name: 'Omega Constellation',
     price: '$1,499',
-    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+    image: 'https://images.unsplash.com/photo-1677445166019-4fa91a090e49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ]
 

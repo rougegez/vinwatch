@@ -7,33 +7,33 @@ import { notFound } from 'next/navigation'
 const watches = [
   { 
     id: 1, 
-    name: 'Classic Chronograph', 
-    price: '$1,299', 
-    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-    description: 'A timeless masterpiece, our Classic Chronograph combines elegant design with precision engineering. Featuring a stainless steel case, sapphire crystal, and water resistance up to 100 meters, this watch is perfect for both formal occasions and everyday wear.',
-    features: ['Automatic movement', 'Stainless steel case', 'Sapphire crystal', 'Water resistant to 100m', 'Chronograph function'],
-    dimensions: { diameter: '42mm', thickness: '12mm' },
-    strap: { material: 'Genuine leather', width: '20mm' }
+    name: 'Patek Philippe Nautilus', 
+    price: '$123,800', 
+    image: 'https://images.unsplash.com/photo-1626624386327-5204714bae9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description: 'The Patek Philippe Nautilus is a legendary luxury sports watch, introduced in 1976 and celebrated for its distinctive porthole-inspired case design, integrated bracelet, and unparalleled craftsmanship. Combining elegance with versatility, it is crafted from premium materials like stainless steel or precious metals and features intricate movements synonymous with Patek Philippe’s reputation for excellence. The Nautilus has become a timeless icon, coveted by watch enthusiasts and collectors worldwide.',
+    features: ['Automatic movement', 'Stainless steel case', 'Sapphire crystal', 'Water resistant to 100m', 'Scratch Resistant Sapphire Crystal Mirror'],
+    dimensions: { diameter: '40mm', thickness: '9mm' },
+    strap: { material: 'Silver', width: '20mm' }
   },
   { 
     id: 2, 
-    name: 'Elegant Dress Watch', 
-    price: '$899', 
-    image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-    description: 'Our Elegant Dress Watch epitomizes sophistication and style. With its slim profile and minimalist dial, this timepiece is the perfect accessory for formal events or business attire. The gold-plated case adds a touch of luxury to this already exquisite watch.',
-    features: ['Quartz movement', 'Gold-plated case', 'Scratch-resistant sapphire crystal', 'Water resistant to 30m'],
-    dimensions: { diameter: '38mm', thickness: '8mm' },
-    strap: { material: 'Alligator leather', width: '18mm' }
+    name: 'Omega Speedmaster Professional Moonwatch', 
+    price: '$8000', 
+    image: 'https://images.unsplash.com/photo-1696321408191-62d7363743b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description: "The Omega Speedmaster Moonwatch is a legendary chronograph, famously known as the first watch worn on the moon during the Apollo 11 mission in 1969. Renowned for its precision, durability, and timeless design, it remains an iconic symbol of space exploration and horological excellence.",
+    features: ['Manual Winding', 'Chronometer', 'Scratch-resistant sapphire crystal', 'Water resistant to 50m'],
+    dimensions: { diameter: '42mm', thickness: '13.2mm' },
+    strap: { material: 'Steel', width: '18mm' }
   },
   { 
     id: 3, 
-    name: 'Vintage Diver', 
+    name: 'Omega Constellation', 
     price: '$1,499', 
-    image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-    description: 'Inspired by the golden age of underwater exploration, our Vintage Diver watch combines retro aesthetics with modern functionality. This robust timepiece features a unidirectional rotating bezel and exceptional water resistance, making it suitable for professional divers and vintage enthusiasts alike.',
-    features: ['Automatic movement', 'Stainless steel case', 'Unidirectional rotating bezel', 'Super-LumiNova indices', 'Water resistant to 300m'],
-    dimensions: { diameter: '44mm', thickness: '14mm' },
-    strap: { material: 'Stainless steel bracelet', width: '22mm' }
+    image: 'https://images.unsplash.com/photo-1677445166019-4fa91a090e49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description: 'The 1956 Omega Antique Constellation Cal. 505 GF Wedge is a rare vintage timepiece prized for its timeless elegance and craftsmanship. Featuring the renowned Caliber 505 automatic movement, it boasts a gold-filled case with a distinctive "wedge" design, a hallmark of mid-century luxury. The Constellation series, known for precision and style, includes this collectible model with its iconic star emblem and crosshair dial. It remains a sought-after piece for collectors and enthusiasts of classic Omega watches.',
+    features: ['Self-Winding Chronometer', 'Stainless steel case', 'New Cassis alligator clicker finish', 'Non-waterproof'],
+    dimensions: { diameter: '34.5mm', thickness: '14mm' },
+    strap: { material: 'Crocodile Skin', width: '18mm' }
   },
   // ... add details for other watches
 ]

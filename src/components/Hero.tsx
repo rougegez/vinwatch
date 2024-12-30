@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 export function Hero() {
@@ -16,7 +17,9 @@ export function Hero() {
         <div className="max-w-2xl text-white animate-slideUp">
           <h1 className="text-5xl font-serif font-bold mb-4">Timeless Elegance on Your Wrist</h1>
           <p className="text-xl mb-8">Discover our curated collection of vintage timepieces, each with a story to tell.</p>
-          <Button size="lg">Explore Collection</Button>
+          <Link href="/collection">
+            <Button size="lg">Explore Collection</Button>
+          </Link>
         </div>
       </div>
     </section>
