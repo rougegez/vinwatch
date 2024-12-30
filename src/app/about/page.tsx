@@ -17,10 +17,10 @@ export default function About() {
                   Founded in 2023, VinWatch is born from a passion for horological craftsmanship and a deep appreciation for the timeless elegance of vintage timepieces. Our mission is to curate and offer a selection of the finest vintage watches, each with its own unique story and character.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  We believe that a watch is more than just a tool to tell time; it's a piece of history, a work of art, and a statement of personal style. Our team of expert horologists carefully selects each piece in our collection, ensuring authenticity, quality, and historical significance.
+                  We believe that a watch is more than just a tool to tell time; it&apos;s a piece of history, a work of art, and a statement of personal style. Our team of expert horologists carefully selects each piece in our collection, ensuring authenticity, quality, and historical significance.
                 </p>
                 <p className="text-gray-600">
-                  At VinWatch, we're not just selling watches; we're preserving history and passing on the legacy of fine watchmaking to a new generation of enthusiasts.
+                  At VinWatch, we&apos;re not just selling watches; we&apos;re preserving history and passing on the legacy of fine watchmaking to a new generation of enthusiasts.
                 </p>
               </div>
               <div className="relative h-[400px] animate-scaleIn" style={{animationDelay: '0.4s'}}>
